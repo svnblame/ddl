@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('upload', 'UploadController@upload')->name('upload');
+Route::post('store', 'UploadController@store')->name('store');
+Route::get('list', 'UploadController@list')->name('list');
