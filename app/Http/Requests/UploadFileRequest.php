@@ -25,7 +25,7 @@ class UploadFileRequest extends FormRequest
     {
         return [
             'fileName' => 'required|string',
-            'userFile' => 'mimetypes:video/avi,video/mpeg,video/quick-time,image/bmp,image/jpeg,image/jpg,image/gif'
+            'userFile' => 'mimetypes:video/avi,video/mpeg,video/quick-time,image/bmp,image/jpeg,image/jpg,image/gif,image/png'
         ];
     }
 }
